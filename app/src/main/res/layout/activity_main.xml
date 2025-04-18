@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <!-- App Logo -->
+   <ImageView
+       android:id="@+id/app_logo"
+       android:layout_width="300dp"
+       android:layout_height="100dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="60dp"
+       android:src="@drawable/handcraft" />
+
+   <!-- Join Now Button (Rounded, Black Border, White Background) -->
+   <Button
+       android:id="@+id/btnJoinNow"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/app_logo"
+       android:layout_marginTop="40dp"
+       android:layout_centerHorizontal="true"
+       android:text="Join Now"
+       android:textColor="#ffffff"
+       android:background="@drawable/join_button"
+       android:textStyle="bold" />
+
+   <!-- Already Have an Account Button (Rounded Black Background, White Text) -->
+   <Button
+       android:id="@+id/btnAlreadyHaveAccount"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/btnJoinNow"
+       android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"
+       android:text="Already Have an Account?"
+       android:textColor="#FFFFFF"
+       android:background="@color/black"
+       android:padding="10dp"
+       android:textStyle="bold" />
+
+   <TextView
+       android:id="@+id/txtGoFree"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/btnAlreadyHaveAccount"
+       android:layout_centerHorizontal="true"
+       android:text="Go Free"
+       android:textColor="#000000"
+       android:textStyle="normal"
+       android:paddingTop="40dp"
+       android:clickable="true"
+       android:focusable="true" />
+
+
+</RelativeLayout>

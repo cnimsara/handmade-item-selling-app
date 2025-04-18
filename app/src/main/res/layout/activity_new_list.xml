@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/listingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="List Your Listing"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Add Your Photo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!-- Horizontal Layout for the 3 square-bordered boxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- First Square Box -->
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_background">
+
+                <!-- Camera Icon Inside the Square Box -->
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="Camera Icon"
+                    android:src="@drawable/camera" />
+            </FrameLayout>
+
+            <!-- Second Square Box -->
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_background">
+
+                <!-- Camera Icon Inside the Square Box -->
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="Camera Icon"
+                    android:src="@drawable/camera" />
+            </FrameLayout>
+
+            <!-- Third Square Box -->
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border_background">
+
+                <!-- Camera Icon Inside the Square Box -->
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="Camera Icon"
+                    android:src="@drawable/camera" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Description Section -->
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_background"
+            android:gravity="top"
+            android:hint="Enter Your Item Details"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+
+
+        <TextView
+            android:id="@+id/PriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Price"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+<!--         Price Input Field-->
+         <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_background"
+            android:hint="$ Enter Price"
+            android:inputType="numberDecimal"
+            android:text="$"
+            android:maxLength="10" />
+
+
+        <!-- Buttons for Listing Item and Saving Draft -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- save draft Button -->
+            <Button
+                android:id="@+id/saveDraftButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnboarde"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="Save Draft"
+                android:textColor="@android:color/black"
+
+                android:textSize="18sp" />
+
+            <!-- list Button -->
+            <Button
+                android:id="@+id/listItemButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="List Item"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HandmadeItem"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivitySellingItem"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySearch"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDescription"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ItemViewActivity" -->
+        <!-- android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt; -->
+        <!-- android:name=".ListingActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".NewListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Go_Free"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegister"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

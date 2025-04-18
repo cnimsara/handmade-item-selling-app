@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Background color -->
+
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- Border color -->
+
+    <corners android:radius="30dp" /> <!-- Rounded corners for a pill shape -->
+
+    <size
+        android:width="3600dp"
+        android:height="30dp" />
+
+    <padding
+        android:left="12dp"
+        android:right="12dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</shape>

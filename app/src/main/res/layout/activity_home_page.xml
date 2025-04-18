@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ActivityHomePage">
+
+    <!-- Search Bar (Now above the image) -->
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search items..."
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:drawablePadding="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Featured Image -->
+    <ImageView
+        android:id="@+id/featuredImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/searchBox"
+        android:scaleType="centerCrop"
+        android:src="@drawable/strawhat" />
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/featuredImage"
+        android:text="Handmade Straw Hat"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Item Price -->
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemName"
+        android:layout_marginTop="8dp"
+        android:text="$30.00"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <!-- Home Icon at the Bottom Left -->
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/home"
+        android:contentDescription="Home Icon"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp" />
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/homeIcon"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/search"
+        android:contentDescription="Search Icon"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="50dp" />
+
+    <ImageView
+        android:id="@+id/storeIcon"
+        android:layout_width="16dp"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@id/searchIcon"
+        android:contentDescription="store Icon"
+        android:src="@drawable/shop" />
+    <ImageView
+        android:id="@+id/massageIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/storeIcon"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/massege"
+        android:contentDescription="message Icon"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="50dp" />
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/massageIcon"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/user"
+        android:contentDescription="user Profile"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="50dp" />
+</RelativeLayout>

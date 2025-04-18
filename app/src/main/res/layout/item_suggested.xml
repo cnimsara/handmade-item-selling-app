@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ActivityHomePage">
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search items..."
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="40dp" /> <!-- Added padding to avoid overlap with icon -->
+
+    <!-- Suggested Items RecyclerView -->
+    <TextView
+        android:id="@+id/suggestedItemsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested Items"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/searchBox"
+        android:layout_marginTop="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSuggestedItems"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/suggestedItemsTitle"
+        android:layout_marginTop="10dp"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_suggested" />
+
+    <!-- Featured Image Below Suggested Items -->
+    <ImageView
+        android:id="@+id/featuredImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/recyclerViewSuggestedItems"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/featured_item" />
+
+</RelativeLayout>

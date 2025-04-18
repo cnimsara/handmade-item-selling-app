@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color of the button (transparent) -->
+    <solid android:color="@android:color/transparent"/>
+
+    <!-- Border properties -->
+    <stroke
+        android:color="#000000"
+    android:width="2dp"/>
+
+    <!-- Rounded corners (optional) -->
+    <corners android:radius="8dp" />
+</shape>

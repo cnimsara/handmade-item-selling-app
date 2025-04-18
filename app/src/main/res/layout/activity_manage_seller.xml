@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageSellerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <!-- Manage Selling Section (No Arrow) -->
+        <TextView
+            android:id="@+id/manageSellerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Manage Selling"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:paddingEnd="30dp" />
+
+        <!-- Sold Items Section with Right Arrow -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!-- Sold Items Title -->
+            <TextView
+                android:id="@+id/soldItemsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold Items"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <!-- Right Arrow Icon for Sold Items -->
+            <ImageView
+                android:id="@+id/rightArrowSoldItems"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nextarrow"
+                android:contentDescription="Right Arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+
+        <!-- list Items Section with Right Arrow -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!-- list Items Title -->
+            <TextView
+                android:id="@+id/ListNewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List New Item"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <!-- Right Arrow Icon for list Items -->
+            <ImageView
+                android:id="@+id/rightArrowListNewItems"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nextarrow"
+                android:contentDescription="Right Arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+
+
+        <!-- Listed Items Section with Right Arrow -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!-- Listed Items Title -->
+            <TextView
+                android:id="@+id/listItemsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listed Items"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+
+            <!-- Right Arrow Icon for Listed Items -->
+            <ImageView
+                android:id="@+id/rightArrowListedItems"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nextarrow"
+                android:contentDescription="Right Arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+
+        <!-- Draft Items Section with Right Arrow -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!-- Draft Items Title -->
+            <TextView
+                android:id="@+id/draftItemsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Draft Items"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+            <!-- Right Arrow Icon for Draft Items -->
+            <ImageView
+                android:id="@+id/rightArrowDraftItems"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nextarrow"
+                android:contentDescription="Right Arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+
+        <!-- Selling Items Section with Right Arrow -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!-- Selling Items Title -->
+            <TextView
+                android:id="@+id/sellingItemsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selling Items"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+
+            <!-- Right Arrow Icon for Selling Items -->
+            <ImageView
+                android:id="@+id/rightArrowSellingItems"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nextarrow"
+                android:contentDescription="Right Arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
